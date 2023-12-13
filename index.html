@@ -10,16 +10,20 @@
 </head>
 
 <body>
-	上傳檔案：<input id="hostfile" type="file" accept="image/*" multiple="multiple" />
+	<input id="hostfile" type="file" accept="image/*" multiple="multiple" />
+	<br>
 	<input id="loadbtn" type="button" value="載入" />
-	<!-- <br>
-	網址圖片：<input id="urltext" type="text" />
-	<input id="urlloadbtn" type="button" value="載入" />
-	<br> -->
+	<input type="checkbox" id="cutout" />裁剪白邊
 	<input id="makebtn" type="button" value="轉換" />
 	<br>
+	放大倍率
+	<input id="ratio" type="number" value="10" min="1" />
+	<input id="ratioset" type="button" value="設置" />
+	<span id="ratioerror"></span>
+	<br>
+	<span id="showsize"></span>，<span id="showpos"></span>
+	<br>
 	<img id="inputimg" />
-	<!-- <img id="outputimg" /> -->
 	<table id="outputtable"></table>
 </body>
 

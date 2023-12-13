@@ -15,3 +15,7 @@ td svg {
 td svg:hover {
 	opacity: 1;
 }
+
+#ratioerror {
+	color: #a00;
+}
